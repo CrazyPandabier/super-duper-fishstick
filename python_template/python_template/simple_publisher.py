@@ -27,7 +27,7 @@ class MinimalPublisher(Node):
         :param int a: first input
         :param int b: second input
         
-        :raises: TypeError: if a or b is not an int
+        :raises: TypeError: if a or b is not an integer
 
         :return: sum of a and b
         :rtype: int
