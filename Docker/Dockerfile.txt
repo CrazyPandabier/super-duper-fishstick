@@ -7,11 +7,15 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     python3-colcon-common-extensions \
     python3-sphinx \
-    python3-pip
+    python3-pip \
+    default-jdk \
+    graphviz
 
 RUN pip install myst-parser
 RUN pip install sphinx-rtd-theme
 RUN pip install docutils==0.18.1
+RUN pip install -U pytest
+RUN pip install pytest-flake8
 
 # Clone your ROS2 package from GitHub
 RUN mkdir -p /ros_ws/src
