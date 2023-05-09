@@ -5,3 +5,4 @@ python_template
    :maxdepth: 4
 
    python_template
+   test
